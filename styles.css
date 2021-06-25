@@ -1,10 +1,12 @@
 body {
     font-family: 'Roboto';
     display: grid;
+    width: 100%;
 }
 header {
     display: flex;
     justify-content: center;
+    box-shadow: 0px 4px  5px #292929;
 }
 #logo_header {
     display: flex;
@@ -20,6 +22,8 @@ header {
 
 #Explorer {
     background: #f1f1f1f6;
+    display: flex;
+    justify-content: center;
 }
 
 .fonction_content {
@@ -31,12 +35,15 @@ header {
     background: #f1f1f1f6;
     box-shadow: 1px 1px 12px #c1c7c7;
     /*margin: 15px;*/
-    margin-left: 5%;
+    margin: auto;
     margin-bottom: 25px;
 }
 
 #Restaurant {
     background: #f1f1f1f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .restau_content {
@@ -45,7 +52,8 @@ header {
     border-radius: 20px;
     background: #FFFFFF;
     box-shadow: 1px 1px 12px #C1C7C7;
-    margin: 15px;
+    margin: auto;
+    margin-bottom: 4%;
 }
 
 .img_restau {
@@ -57,8 +65,19 @@ header {
     margin: auto;
 }
 
+.texte_restau {
+    padding-left: 2%;
+}
+
 footer {
     background: #313131;
     color: #f9fafa;
 
+}
+
+
+.image_restau {
+    display: flex;
+    object-fit: cover;
+    width: 77%;
 }
