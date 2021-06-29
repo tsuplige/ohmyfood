@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 body {
     font-family: 'Roboto';
     display: grid;
@@ -70,6 +72,10 @@ header {
     margin-left: 10px;
 }
 
+#Fonctionnement {
+    padding-top: 2%;
+}
+
 .fonction_content {
     display: flex;
     height: 4em;
@@ -90,6 +96,10 @@ header {
     justify-content: center;
     margin-left: 20%;
 
+}
+
+h2 {
+    padding-left: 2%;
 }
 
 #Restaurant {
@@ -153,7 +163,10 @@ footer {
 }
 
 #logo_footer {
-    fill: white;
+    font-family: "Shrikhand";
+    color: #ffffff;
+    margin: 0rem 0rem 1rem 0rem;
+    font-size: 2rem;
 }
 
 .text2_foot {
@@ -169,8 +182,7 @@ footer {
 .image_restau {
     display: flex;
     object-fit: cover;
-    width: 
-    100%;
+    width: 100%;
 }
 @media  screen and (max-width: 767px){
     body {
@@ -334,5 +346,30 @@ footer {
         margin: -20% 0% 0%;
         padding: 1% 4% 1%;
         border-radius: 2rem 2rem 0rem 0rem;
+    }
+
+    .menu_select {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 5%;
+        background: white;
+        border-radius: 1em;
+        margin-bottom: 5%;
+    }
+
+    .menu_select h4 {
+        margin: 0%;
+    }
+
+    .menu_select p {
+        grid-row: 2/3;
+        grid-column: 1/3;
+        margin: 0%;
+    }
+
+    .prix{
+        grid-row: 2/3;
+        grid-column: 3/4;
     }
 }
