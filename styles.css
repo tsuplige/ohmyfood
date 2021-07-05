@@ -201,7 +201,7 @@ footer {
     /* display: flex; */
     object-fit: cover;
     max-width: 100%;
-    max-height: 60%;
+    max-height: 55em;
     width: 100%;
 }
 
