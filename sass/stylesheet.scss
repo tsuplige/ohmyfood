@@ -4,7 +4,6 @@ body {
     font-family: 'Roboto';
     display: grid;
     width: 100%;
-    max-width: 1440px;
     margin:auto;
 
     h1 {
@@ -263,7 +262,19 @@ footer {
         background: white;
         border-radius: 1em;
         margin-bottom: 5%;
+        animation: apparition 0.8s ease-out;
     
+        @keyframes apparition {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
         &--titre {
             margin: 0%;
             grid-column: 1/3;
