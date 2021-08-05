@@ -440,5 +440,6 @@ footer .footer__icon {
   }
   .menu__select {
     padding: 5%;
+    max-width: 20em;
   }
 }/*# sourceMappingURL=stylesheet.css.map */
