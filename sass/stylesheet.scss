@@ -220,6 +220,20 @@ footer {
         background: #f5f5f5;
         box-shadow: 1px 1px 12px #C1C7C7;
     }
+
+    &--new {
+        display: flex;
+        justify-content: flex-end;
+        #new__bloc {
+            background-color: #9ce2d1;
+            color: #195a4a;
+            padding: 0.5rem;
+            border-radius: 0.2rem;
+            position: absolute;
+            margin: 1em 1em 0em 0em;
+        }
+        
+    }
     
     &--img {
         width: 100%;
@@ -339,7 +353,7 @@ footer {
             background-color: #99E2D0;
             height: 6.7em;
             width: 4.7em;
-            margin: -2.1em -6em 0em 1em;
+            margin: -2.1em -6em 0em 2em;
             display: flex;
             justify-content: center;
             align-items: center;
