@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@-webkit-keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
 body {
   font-family: "Roboto";
   display: grid;
@@ -13,20 +25,76 @@ body h2 {
   font-size: 1.8em;
 }
 
+.loader {
+  background-color: #f1f1f17c;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  transition: 1s;
+  -webkit-animation: loader 3s;
+          animation: loader 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.loader__spinner {
+  border: solid #f3f3f300 10px;
+  border-top: solid #9356DC 10px;
+  border-bottom: solid #9356DC 10px;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 1s linear infinite;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 header {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
   /*box-shadow: 0px 4px  5px #292929;*/
-  padding: 2% 0% 2% 0%;
+  padding: 2% 2% 2% 2%;
   height: 3em;
   align-items: center;
 }
-header #header__logo {
+header .header__content {
   display: flex;
+  justify-content: center;
+}
+header .header__content--logo {
+  margin: auto;
+  grid-column: 2/3;
   width: 15em;
 }
-header .header__arrow {
+header .header__index {
   display: none;
+}
+header .header__arrow {
+  font-size: 3em;
+  color: black;
+  text-decoration: none;
 }
 
 footer {
@@ -210,6 +278,10 @@ footer .footer__icon {
   position: absolute;
   margin: 1em 1em 0em 0em;
 }
+.Restaurant__content .bloc__content {
+  display: flex;
+  justify-content: space-between;
+}
 .Restaurant__content--img {
   width: 100%;
   height: 130px;
@@ -226,13 +298,33 @@ footer .footer__icon {
   margin-bottom: -3%;
   margin-top: 3%;
 }
+.Restaurant__content--hearts {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  padding-right: 4%;
+}
+.Restaurant__content--hearts .heartless {
+  color: #a5a5a5f6;
+  font-weight: lighter;
+}
+.Restaurant__content--hearts .heart_hover {
+  display: none;
+  color: #9356DC;
+}
+.Restaurant__content--hearts:hover .heartless {
+  display: none;
+}
+.Restaurant__content--hearts:hover .heart_hover {
+  display: block;
+}
 
 /*page restau*/
 .background__image {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
-  max-height: 55em;
+  max-height: 30em;
   width: 100%;
 }
 
@@ -240,7 +332,7 @@ footer .footer__icon {
   background: #f1f1f1;
   padding: 1% 4% 1%;
   border-radius: 2rem 2rem 0rem 0rem;
-  margin-top: -30rem;
+  margin-top: -3rem;
 }
 .menu__titre {
   display: flex;
@@ -254,6 +346,18 @@ footer .footer__icon {
 }
 .menu__titre--icon {
   font-size: 2em;
+}
+.menu .delay1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.menu .delay2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.menu .delay3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 .menu__select {
   display: flex;
@@ -364,15 +468,13 @@ footer .footer__icon {
     font-size: 1.4em;
   }
 
-  header #header__logo {
-    margin-right: 1em;
+  header .header__content--logo {
+    width: 10em;
   }
 
-  .header__arrow {
-    /*display: none;*/
-    margin-right: 1em;
-    font-size: 2em;
-    text-decoration: none;
+  header .header__arrow {
+    margin-left: 1em;
+    font-size: 1.5em;
   }
 
   /*page d'acceuil*/
@@ -439,7 +541,6 @@ footer .footer__icon {
 
   /*page restau*/
   .background__image {
-    /* display: flex; */
     -o-object-fit: cover;
        object-fit: cover;
     max-width: 100%;
@@ -450,6 +551,8 @@ footer .footer__icon {
   .menu {
     margin-top: -4rem;
   }
+}
+@media screen and (max-width: 460px) {
   .menu__select {
     padding: 5%;
     max-width: 20em;
