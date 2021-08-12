@@ -266,6 +266,9 @@ footer .footer__icon {
   background: #f5f5f5;
   box-shadow: 1px 1px 12px #C1C7C7;
 }
+.Restaurant__content:hover .Restaurant__content--hearts .heartless {
+  background: #f5f5f5;
+}
 .Restaurant__content--new {
   display: flex;
   justify-content: flex-end;
@@ -304,16 +307,33 @@ footer .footer__icon {
   font-size: 2em;
   padding-right: 4%;
 }
+@-webkit-keyframes heart {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart {
+  100% {
+    opacity: 0;
+  }
+}
 .Restaurant__content--hearts .heartless {
   color: #a5a5a5f6;
   font-weight: lighter;
+  position: absolute;
+  background: #ffffff;
 }
 .Restaurant__content--hearts .heart_hover {
-  display: none;
-  color: #9356DC;
+  /*color: #9356DC;*/
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .Restaurant__content--hearts:hover .heartless {
-  display: none;
+  -webkit-animation: heart 0.5s;
+          animation: heart 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 .Restaurant__content--hearts:hover .heart_hover {
   display: block;
@@ -344,8 +364,12 @@ footer .footer__icon {
 
   }*/
 }
-.menu__titre--icon {
-  font-size: 2em;
+.menu__titre #menu__titre--icon {
+  font-size: 1em;
+  margin-right: -1em;
+}
+.menu__titre .heartless {
+  background: #f1f1f1;
 }
 .menu .delay1 {
   -webkit-animation-delay: 0s;
@@ -459,6 +483,34 @@ footer .footer__icon {
   font-size: 1em;
 }
 
+@media screen and (max-width: 1290px) {
+  .Fonctionnement {
+    padding-top: 2%;
+    font-size: 0.8em;
+  }
+  .Fonctionnement h2 {
+    font-size: 1.9em;
+  }
+  .Fonctionnement__display {
+    display: flex;
+    flex-direction: column;
+  }
+  .Fonctionnement__content {
+    width: 75%;
+    max-width: 80em;
+  }
+  .Fonctionnement__content--number {
+    width: 50px;
+    height: 50px;
+    margin-left: -2em;
+  }
+  .Fonctionnement__content--text {
+    margin: auto;
+  }
+  .Fonctionnement__content--text .txtfonc {
+    margin-left: 1em;
+  }
+}
 @media screen and (max-width: 767px) {
   body {
     font-size: 1.1em;
