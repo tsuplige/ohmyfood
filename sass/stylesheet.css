@@ -530,6 +530,7 @@ footer .footer__icon {
   /*page d'acceuil*/
   #localisation {
     font-size: 1em;
+    font-weight: lighter;
   }
 
   #Explorer {
