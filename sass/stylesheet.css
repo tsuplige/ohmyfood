@@ -80,8 +80,8 @@ body h2 {
   height: 100%;
   position: fixed;
   transition: 1s;
-  -webkit-animation: loader 3s;
-          animation: loader 3s;
+  -webkit-animation: loader 2s;
+          animation: loader 2s;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
   -webkit-animation-fill-mode: both;
@@ -544,7 +544,7 @@ footer .footer__icon {
 
   .Fonctionnement {
     padding-top: 2%;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   .Fonctionnement h2 {
     font-size: 1.9em;
@@ -557,6 +557,9 @@ footer .footer__icon {
     width: 75%;
     max-width: 38em;
   }
+  .Fonctionnement__content--text i {
+    margin-left: -2em;
+  }
   .Fonctionnement__content--number {
     width: 50px;
     height: 50px;
@@ -564,7 +567,7 @@ footer .footer__icon {
   }
   .Fonctionnement__content--text .txtfonc {
     margin-left: 1em;
-    margin-right: -2em;
+    margin-right: -1em;
   }
 
   .Restaurant {

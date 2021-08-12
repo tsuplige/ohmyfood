@@ -60,7 +60,7 @@ body {
     height: 100%;
     position: fixed;
     transition: 1s;
-    animation: loader 3s;    
+    animation: loader 2s;    
     animation-delay: 1s;
     animation-fill-mode: both;
 
@@ -581,7 +581,7 @@ footer {
 
     .Fonctionnement {
         padding-top: 2%;
-        font-size: 0.8em;
+        font-size: 0.7em;
         
         h2 {
             font-size: 1.9em;
@@ -594,6 +594,10 @@ footer {
         &__content {
             width: 75%;
             max-width: 38em;
+
+            &--text i {
+                margin-left: -2em;
+            }
             
             &--number {
                 width: 50px;
@@ -602,7 +606,7 @@ footer {
             }
             &--text .txtfonc {
                 margin-left: 1em;
-                margin-right: -2em;
+                margin-right: -1em;
             }
         }
 
