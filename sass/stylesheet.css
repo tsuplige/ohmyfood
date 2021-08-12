@@ -564,6 +564,7 @@ footer .footer__icon {
   }
   .Fonctionnement__content--text .txtfonc {
     margin-left: 1em;
+    margin-right: -2em;
   }
 
   .Restaurant {
