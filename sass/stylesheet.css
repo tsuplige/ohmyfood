@@ -152,6 +152,10 @@ footer .footer__texte {
 footer .footer__icon {
   margin-right: 15px;
 }
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
 
 /*PAGE D'ACCEUL*/
 #localisation {
