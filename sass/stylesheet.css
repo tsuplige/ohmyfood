@@ -354,7 +354,6 @@ footer a {
 }
 .Restaurant__content--hearts .heart_hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background-clip: text;
   -ms-background-clip: text;
   -o-background-clip: text;
   -moz-background-clip: text;
