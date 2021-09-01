@@ -466,7 +466,7 @@ footer a {
   transition-duration: 0.5s;
 }
 .menu__select--check i {
-  color: azure;
+  color: #fcfcfc;
   font-size: 1.8em;
   transition-duration: 0.5s;
 }
