@@ -203,6 +203,7 @@ footer a {
 }
 #Explorer__bouton:hover {
   background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: 1px 1px 12px #8b8f8f;
 }
 
 /*partie fonctionnement*/
