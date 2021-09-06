@@ -34,18 +34,18 @@
   }
 }
 @-webkit-keyframes spin {
-  0% {
+  from {
     transform: rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(360deg);
   }
 }
 @keyframes spin {
-  0% {
+  from {
     transform: rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(360deg);
   }
 }
@@ -401,6 +401,13 @@ footer a {
 }
 .menu__titre .heartless {
   background: #f1f1f1;
+}
+.menu__stitre::after {
+  content: "   ";
+  background: #99E2D0;
+  display: block;
+  width: 2.5rem;
+  height: 2px;
 }
 .menu .delay1 {
   -webkit-animation-delay: 0s;
