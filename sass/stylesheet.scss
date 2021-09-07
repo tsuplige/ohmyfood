@@ -517,6 +517,11 @@ footer {
     border-radius: 60px;
     box-shadow: 1px 1px 12px #c1c7c7;
     font-size: 1em;
+
+    &:hover {
+        background: linear-gradient(#9356DC, #FF79DA) ;
+        box-shadow: 1px 1px 12px #8b8f8f;
+    }
 }
 
 /*BREACKPOINT 1 : TABLETTE*/
